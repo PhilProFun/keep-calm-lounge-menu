@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/GoogleSans-Regular.ttf') format('truetype');;
+}
+@font-face {
+    font-family: 'Google Sans Bold';
+    src: url('../fonts/GoogleSans-Bold.ttf') format('truetype');;
+}

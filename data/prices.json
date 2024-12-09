@@ -1,0 +1,231 @@
+{
+    "general_items": {
+        "food": [
+            {
+                "name": "Наггетсы",
+                "additionals": [
+                    "из аэрогриля"
+                ],
+                "price": 250
+            },
+            {
+                "name": "Картошка фри",
+                "additionals": [
+                    "из аэрогриля"
+                ],
+                "price": 250
+            },
+            {
+                "name": "Чипсы",
+                "additionals": [
+                    "уточните вкусы"
+                ],
+                "price": 250
+            },
+            {
+                "name": "Соус",
+                "additionals": [
+                    "кетчуп",
+                    "сырный"
+                ],
+                "price": 40
+            },
+            {
+                "name": "Сэндвич",
+                "additionals": [
+                    "американский",
+                    "итальянский",
+                    "с тунцом",
+                    "с салями",
+                    "пепперони"
+                ],
+                "price": 350
+            },
+            {
+                "name": "Ролл",
+                "additionals": [
+                    "цезарь",
+                    "с халапеньо",
+                    "медово-горчичный"
+                ],
+                "price": 350
+            }
+        ],
+        "non_alcohol": [
+            {
+                "name": "Чайник с чаем и печеньки",
+                "additionals": [
+                    "ассам",
+                    "сенча",
+                    "каркаде",
+                    "глинтвейн",
+                    "гречишный",
+                    "да хун пао",
+                    "с жасмином",
+                    "с чебрецом",
+                    "с бергамотом",
+                    "тегуаньинь",
+                    "таёжный сбор",
+                    "вишнёвый пунш",
+                    "молочный улун"
+                ],
+                "price": 350
+            },
+            {
+                "name": "Вода",
+                "additionals": [
+                    "с газом",
+                    "без газа"
+                ],
+                "price": 100
+            },
+            {
+                "name": "Энергетик",
+                "additionals": [
+                    "с сахаром",
+                    "без сахара"
+                ],
+                "price": 200
+            },
+            {
+                "name": "Напиток без сахара",
+                "additionals": [
+                    "арбуз",
+                    "личи",
+                    "клубника",
+                    "малина",
+                    "мохито"
+                ],
+                "price": 150,
+                "popular": true
+            }
+        ],
+        "alcohol": [
+            {
+                "name": "Сидр",
+                "additionals": [
+                    "Chester's",
+                    "Hoegaarden"
+                ],
+                "price": 200
+            },
+            {
+                "name": "Сидр натуральный",
+                "additionals": [
+                    "Дальняя Дача №1",
+                    "Дальняя Дача №2",
+                    "Дальняя Дача №3"
+                ],
+                "price": 400
+            },
+            {
+                "name": "Пиво",
+                "additionals": [
+                    "светлое",
+                    "тёмное",
+                    "нефильтрованное"
+                ],
+                "price": 250
+            },
+            {
+                "name": "Пиво импортное",
+                "additionals": [
+                    "Schneider weisse"
+                ],
+                "price": 400
+            }
+        ]
+    },
+    "time_items": {
+        "hookahs": [
+            {
+                "name": "Базовый кальян",
+                "additionals": [
+                    "Adalya",
+                    "IZZI Bro",
+                    "Chabacco"
+                ],
+                "price": 0
+            },
+            {
+                "name": "Премиальный кальян",
+                "additionals": [
+                    "Black Burn",
+                    "Must Have",
+                    "Darkside",
+                    "Overdose",
+                    "Hooligan",
+                    "Starline",
+                    "Duft",
+                    "Nаш"
+                ],
+                "price": 450,
+                "popular": true
+            },
+            {
+                "name": "Кальян на крепком табаке",
+                "additionals": [
+                    "Bonche",
+                    "Everest",
+                    "Tangiers",
+                    "Trofimoff's"
+                ],
+                "price": 600
+            }
+        ],
+        "special": [
+            {
+                "name": "Чайник с чаем и печеньки",
+                "additionals": [
+                    "раз в час"
+                ],
+                "price": 0,
+                "popular": true
+            }
+        ]
+    },
+    "fix_items": {
+        "hookahs": [
+            {
+                "name": "Премиальный кальян",
+                "additionals": [
+                    "Black Burn",
+                    "Must Have",
+                    "Darkside",
+                    "Overdose",
+                    "Hooligan",
+                    "Starline",
+                    "Duft",
+                    "Nаш"
+                ],
+                "price": 1300,
+                "popular": true
+            },
+            {
+                "name": "Перезабивка кальяна",
+                "additionals": [
+                    "тот же или новый табак"
+                ],
+                "price": 700,
+                "popular": true
+            },
+            {
+                "name": "Кальян на крепком табаке",
+                "additionals": [
+                    "Bonche",
+                    "Everest",
+                    "Tangiers",
+                    "Trofimoff's"
+                ],
+                "price": 1600
+            },
+            {
+                "name": "Перезабивка крепкого кальяна",
+                "additionals": [
+                    "тот же или новый крепкий табак"
+                ],
+                "price": 800
+            }
+        ]
+    }
+}

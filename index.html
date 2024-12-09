@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Mini App by ExisterPro</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+
+    <script src="./core.js" defer></script>
+</head>
+<body>
+    <div class="prototype-screen main" id="main-screen">
+
+        <main>
+            <h1 id="lounge-title">Keep Calm Lounge</h1>
+            
+            <div class="wrapper">
+                <div class="rounder row">
+                    <button class="big__button centered" id="time-button">
+                        <img src="./images/svg/time.svg" alt="arrow">
+                        <p>Тайм</p>
+                    </button>
+                    <button class="big__button centered" id="fix-button">
+                        <img src="./images/svg/fix.svg" alt="arrow">
+                        <p>Фикс</p>
+                    </button>
+                </div>
+    
+                <div class="rounder row">
+                    <button class="big__button little" id="wlan-button">
+                        <img src="./images/svg/wlan.svg" alt="arrow">
+                        <p>Wi-Fi</p>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <div class="prototype-screen" id="menu-screen">
+
+        <header>
+            <button id="back-button">
+                <img src="./images/svg/arrow-to-left.svg" alt="arrow-back">
+                <p>Назад</p>
+            </button>
+            <button id="wlan-button__header">
+                <img src="./images/svg/wlan.svg" alt="arrow-back">
+                <p>Wi-Fi</p>
+            </button>
+        </header>
+
+        <main>
+            <div id="page-info">
+                <h2>Название</h2>
+                <p id="page-ingo__text" class="transparent-50">Сопровождающий текст</p>
+            </div>
+
+            <div class="list-container"></div>
+
+        </main>
+
+    </div>
+
+    <div class="prototype-screen" id="wlan-screen">
+        <header>
+            <button id="back-button-wlan">
+                <img src="./images/svg/arrow-to-left.svg" alt="arrow-back">
+                <p>Назад</p>
+            </button>
+        </header>
+        <main>
+            <h1>Wi-Fi</h1>
+
+            <p class="transparent-50">Чтобы вы могли комфортно провести время и оставаться на связи, мы предлагаем вам бесплатный доступ к Wi-Fi.</p>
+
+            <div id="wlan-screenshot">
+                <p id="wlan-screenshot__title">ДРУГИЕ СЕТИ</p>
+                <div class="rounder">
+                    <div class="wlan__element">...</div>
+                    <div id="wlan-name" class="wlan__element main">
+                        <p>123</p>
+                        <img src="./images/svg/wlan-symbols.svg" alt="wlan-symbols">
+                    </div>
+                    <div id="wlan-name-5g" class="wlan__element main">
+                        <p>123_5G</p>
+                        <img src="./images/svg/wlan-symbols.svg" alt="wlan-symbols">
+                    </div>
+                    <div class="wlan__element">...</div>
+                </div>
+            </div>
+
+            <button id="copy-password">
+                <p id="wlan-password">password</p>
+                <img src="./images/svg/copy.svg" alt="copy-icon">
+            </button>
+
+            <p class="transparent-50">Приятного отдыха и наслаждения ароматным дымом! Если у вас возникнут вопросы, не стесняйтесь обратиться к персоналу.</p>
+        </main>
+    </div>
+</body>
+</html>

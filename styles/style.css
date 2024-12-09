@@ -1,0 +1,251 @@
+:root {
+    --background: #252525;
+    --list-element-color: #303030;
+    --button: #5C5C5C;
+    --price: #456C72;
+    --action: #376D36;
+    --text-color: #FFFFFF;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+    outline-offset: -1px;
+}
+.develop-hidden {
+    display: none;
+}
+body {
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 25px 20px;
+
+    background-color: var(--background);
+    color: var(--text-color);
+
+    font-family: 'Google Sans';
+    font-size: 16px;
+}
+html, body {
+    overflow: hidden !important;
+}
+#lounge-title {
+    text-align: center;
+}
+.prototype-screen {
+    width: 100%;
+    height: 100%;
+    padding: 25px 20px;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    overflow-x: auto;
+
+    background-color: var(--background);
+
+    transition: 
+        background-color .4s ease-in-out,
+        filter .4s ease-in-out,
+        left .4s ease-in-out,
+        opacity .4s ease-in-out,
+        scale .4s ease-in-out;
+}
+.prototype-screen.main {
+    left: 0;
+}
+
+.prototype-screen.blur {
+    scale: .75;
+    opacity: .25;
+    filter: blur(20px);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--background);
+    z-index: 100;
+}
+button {
+    border: none;
+    color: var(--text-color);
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+    background-color: var(--button);
+    border-radius: 1000px;
+
+    font-family: 'Google Sans';
+    font-size: 16px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1, h2 {
+    margin-bottom: 10px;
+    font-family: 'Google Sans Bold';
+    font-weight: 500;
+}
+#page-info h2 {
+    font-size: 36px;
+    text-align: center;
+}
+.transparent-25 {
+    opacity: .25;
+}
+.transparent-50,
+.list-element__disc {
+    opacity: .5;
+}
+.transparent-75 {
+    opacity: .75;
+}
+.big__button {
+    justify-content: space-between;
+    padding: 20px;
+}
+.big__button > img {
+    max-width: 32px;
+}
+#main-screen .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+}
+#main-screen .wrapper .centered {
+    flex-direction: column;
+    gap: 20px;
+}
+#wlan-button {
+    background-color: var(--action);
+    justify-content: center;
+}
+.rounder {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+}
+.rounder.row {
+    flex-direction: row;
+    gap: 10px;
+}
+.rounder.row > * {
+    flex: 1;
+    border-radius: 10px !important;
+}
+.rounder > * {
+    border-radius: 0;
+}
+.rounder > *:only-child {
+    border-radius: 10px !important;
+}
+.rounder > *:first-child {
+    border-radius: 10px 10px 0 0;
+}
+.rounder > *:last-child {
+    border-radius: 0 0 10px 10px;
+}
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.list-element {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: var(--list-element-color);
+    overflow: hidden;
+}
+.list-element.popular {
+    background-color: #434343;
+    min-height: 100px;
+}
+.list-element.popular::before {
+    content: 'популярно';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, .1);
+    padding: 5px 20px;
+}
+.list-element__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+.list-element__disc > p::before {
+    content: '- ';
+}
+.list-element__price {
+    flex: none;
+    padding: 5px 30px;
+    border-radius: 100px;
+    background-color: var(--price);
+}
+.list-element.popular .list-element__price {
+    background-color: #00749D;
+}
+.category {
+    margin-bottom: 10px;
+}
+#menu-screen {
+    left: 100%;
+}
+#wlan-screen {
+    z-index: 99999;
+}
+#wlan-screen p {
+    text-align: justify;
+}
+.wlan-logo__wrapper,
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#copy-password {
+    background-color: var(--action);
+}
+#wlan-screenshot {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+}
+#wlan-screenshot__title {
+    margin-left: 20px;
+}
+.wlan__element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 38px;
+    background-color: rgba(255, 255, 255, .1);
+}
+.wlan__element.main {
+    background-color: rgba(255, 255, 255, .25);
+}
+#wlan-screenshot > .rounder {
+    gap: 1px;
+}
+#page-ingo__text {
+    text-align: center;
+}
